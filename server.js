@@ -12,7 +12,7 @@ app.route('/')
 			res.sendFile(path.join(__dirname + '/index.html'));
 	});
 
-app.use('/api/users', (req, res) =>{
+app.route('/api/users', (req, res) =>{
     res.json({"message":"Fetched successfully"});
     res.sendStatus(200);
 });
